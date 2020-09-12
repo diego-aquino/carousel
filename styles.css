@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
+}
+
+.container {
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#items-wrapper {
+    width: 100vw;
+}
+
+#items {
+    display: flex;
+
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+}
+
+.item {
+    height: 540px;
+    width: 100%;
+    flex: none;
+
+    scroll-snap-align: start;
+    pointer-events: none;
+}
+
+.item img {
+    height: 100%;
+    width: 100%;
+
+    object-fit: cover;
+}
